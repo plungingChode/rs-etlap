@@ -6,6 +6,8 @@ use serde::Deserialize;
 pub struct Config {
     pub input_path: String,
     pub output_path: String,
+    pub delimiter: char,
+    pub row_filter: String
 }
 
 impl Config {

@@ -37,25 +37,25 @@ pub fn read_meal_docx<P: AsRef<Path>>(path: P) -> Vec<MealRow> {
 
 #[derive(Debug, Serialize)]
 pub struct MealRow {
-    header: String,
-    cells: Vec<MealCell>,
+    pub header: String,
+    pub cells: Vec<MealCell>,
 }
 
 #[derive(Debug, Serialize)]
 pub struct MealCell {
-    food: Vec<Food>,
-    nutrients: Option<Nutrients>,
+    pub food: Vec<Food>,
+    pub nutrients: Option<Nutrients>,
 }
 
 #[derive(Debug, Serialize)]
 pub struct Nutrients {
-    energy: f64,
-    carbs: f64,
-    protein: f64,
-    sugar: f64,
-    fat: f64,
-    salt: f64,
-    saturated_fat: f64,
+    pub energy: f64,
+    pub carbs: f64,
+    pub protein: f64,
+    pub sugar: f64,
+    pub fat: f64,
+    pub salt: f64,
+    pub saturated_fat: f64,
 }
 
 impl Nutrients {

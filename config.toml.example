@@ -1,2 +1,4 @@
 input_path = "./sample-input.docx"
-output_path = ""
+output_path = "./sample-output.csv"
+delimiter = ","
+row_filter = "tízórai"
